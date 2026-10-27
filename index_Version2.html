@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task3 Studio | Landing Page</title>
+    <meta
+      name="description"
+      content="Landing page modern untuk produk, jasa, atau startup dengan CTA, fitur, testimonial, dan form kontak."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              soft: "0 20px 60px rgba(15, 23, 42, 0.12)",
+            },
+            colors: {
+              brand: {
+                50: "#eef6ff",
+                100: "#dceeff",
+                500: "#2563eb",
+                600: "#1d4ed8",
+                700: "#1e3a8a",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-100 text-slate-800 antialiased">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#" class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 text-lg font-bold text-white shadow-md">
+            T
+          </div>
+          <div>
+            <div class="text-lg font-extrabold tracking-tight text-slate-900">Task3 Studio</div>
+          </div>
+        </a>
+
+        <div class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+          <a href="#feature" class="transition hover:text-brand-600">Fitur</a>
+          <a href="#about" class="transition hover:text-brand-600">Tentang</a>
+          <a href="#pricing" class="transition hover:text-brand-600">Harga</a>
+          <a href="#testimonial" class="transition hover:text-brand-600">Testimoni</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="#form" class="hidden rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-brand-600 hover:text-brand-600 sm:inline-block">
+            Konsultasi
+          </a>
+          <a href="#form" class="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-brand-600/30 transition hover:bg-brand-700">
+            Pesan Sekarang
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,0.18),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(14,165,233,0.18),transparent_30%)]"></div>
+        <div class="relative mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-28">
+          <div class="flex flex-col justify-center">
+            <span class="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-brand-100 bg-brand-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-brand-700">
+              Solusi digital untuk bisnis Anda
+            </span>
+            <h1 class="max-w-xl text-4xl font-black leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+              Tingkatkan penjualan dengan landing page yang siap jual.
+            </h1>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+              Kami membantu brand, bisnis, dan produk Anda tampil lebih profesional, lebih percaya diri, dan lebih mudah mendapatkan lead baru.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a href="#form" class="inline-flex items-center justify-center rounded-full bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-600/30 transition hover:bg-brand-700">
+                Pesan Sekarang
+              </a>
+              <a href="#about" class="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3.5 text-base font-semibold text-slate-700 transition hover:border-brand-600 hover:text-brand-600">
+                Lihat Detail
+              </a>
+            </div>
+
+            <div class="mt-10 grid max-w-lg grid-cols-3 gap-4">
+              <div>
+                <div class="text-2xl font-black text-slate-900">1.2K+</div>
+                <div class="mt-1 text-sm text-slate-500">Lead didapat</div>
+              </div>
+              <div>
+                <div class="text-2xl font-black text-slate-900">4.9/5</div>
+                <div class="mt-1 text-sm text-slate-500">Rating client</div>
+              </div>
+              <div>
+                <div class="text-2xl font-black text-slate-900">48h</div>
+                <div class="mt-1 text-sm text-slate-500">Prototipe siap</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="glass relative rounded-[32px] border border-slate-200 p-4 shadow-soft">
+              <div class="rounded-[28px] bg-white p-4 shadow-xl">
+                <div class="mb-4 flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                    <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                    <span class="h-3 w-3 rounded-full bg-emerald-500"></span>
+                  </div>
+                  <span class="rounded-full bg-brand-50 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-brand-700">
+                    Live Preview
+                  </span>
+                </div>
+
+                <div class="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                  <div class="bg-brand-600 px-5 py-4 text-white">
+                    <div class="text-xs uppercase tracking-[0.16em] text-brand-100">Campaign Growth</div>
+                    <div class="mt-2 flex items-end justify-between">
+                      <div>
+                        <div class="text-3xl font-black">+286%</div>
+                        <div class="text-sm text-brand-100">Konversi meningkat</div>
+                      </div>
+                      <div class="rounded-full bg-white/15 px-2 py-1 text-xs font-semibold">
+                        Q3 2026
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-4 p-5">
+                    <div class="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
+                      <div class="flex items-center justify-between">
+                        <span class="text-sm font-medium text-slate-500">Penjualan</span>
+                        <span class="text-sm font-bold text-emerald-600">+24.6%</span>
+                      </div>
+                      <div class="mt-3 h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
+                        <div class="h-full w-[78%] rounded-full bg-gradient-to-r from-brand-500 to-cyan-400"></div>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                      <div class="rounded-2xl bg-slate-900 p-4 text-white">
+                        <div class="text-sm text-slate-300">Traffic</div>
+                        <div class="mt-2 text-2xl font-black">89.4K</div>
+                      </div>
+                      <div class="rounded-2xl bg-brand-50 p-4 text-slate-900">
+                        <div class="text-sm text-slate-500">CTR</div>
+                        <div class="mt-2 text-2xl font-black">7.8%</div>
+                      </div>
+                    </div>
+
+                    <div class="rounded-2xl border border-dashed border-slate-200 bg-slate-50 p-4">
+                      <div class="flex items-center justify-between">
+                        <div>
+                          <div class="text-xs uppercase tracking-[0.12em] text-slate-400">Paket</div>
+                          <div class="mt-1 text-lg font-bold text-slate-900">Pro Business</div>
+                        </div>
+                        <div class="rounded-full bg-emerald-100 px-2 py-1 text-xs font-bold text-emerald-700">
+                          Best seller
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="feature" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-600">Fitur utama</p>
+          <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+            Solusi landing page yang dibuat untuk conversion
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-xl text-brand-600">
+              ⚡
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Desain Modern</h3>
+            <p class="mt-3 text-slate-600">
+              Tampilan yang sleek, bersih, dan fokus pada pesan utama agar audiens cepat paham.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-xl text-brand-600">
+              📈
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Optimasi Konversi</h3>
+            <p class="mt-3 text-slate-600">
+              Struktural halaman dibuat agar CTA terlihat jelas dan mendorong calon pelanggan melakukan tindakan.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-xl text-brand-600">
+              🛠️
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Siap Deploy</h3>
+            <p class="mt-3 text-slate-600">
+              Halaman dibuat dengan teknologi ringan dan siap diunggah ke Vercel, Netlify, atau hosting lain.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-white">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <div class="flex items-center">
+            <div class="w-full rounded-[32px] bg-gradient-to-br from-slate-900 via-slate-800 to-brand-700 p-8 text-white shadow-soft">
+              <div class="rounded-2xl bg-white/10 p-5">
+                <p class="text-sm uppercase tracking-[0.18em] text-slate-300">Kenapa pilih kami</p>
+                <h3 class="mt-4 text-3xl font-black">Landing page yang membantu Anda menjual lebih banyak.</h3>
+                <ul class="mt-6 space-y-3 text-slate-200">
+                  <li class="flex items-center gap-3">
+                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400 text-xs text-slate-900">✓</span>
+                    Struktur copywriting yang jelas
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400 text-xs text-slate-900">✓</span>
+                    CTA yang mudah ditemukan
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400 text-xs text-slate-900">✓</span>
+                    Responsive di semua device
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center">
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-600">Mengapa kami</p>
+            <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+              Fokus pada pesan, kepercayaan, dan hasil.
+            </h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">
+              Setiap elemen dibuat untuk memudahkan audiens memahami nilai produk Anda. Kami menggabungkan desain yang menarik dengan strategi komunikasi yang kuat agar landing page Anda tidak hanya indah, tetapi juga berpotensi meningkatkan konversi.
+            </p>
+
+            <div class="mt-8 space-y-6">
+              <div class="flex gap-4">
+                <div class="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-brand-50 text-xl text-brand-600">
+                  01
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-slate-900">Penempatan pesan yang kuat</h4>
+                  <p class="mt-1 text-slate-600">Headline, subheadline, dan CTA dibuat agar langsung tertangkap oleh audiens.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-brand-50 text-xl text-brand-600">
+                  02
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-slate-900">Desain bersifat profesional</h4>
+                  <p class="mt-1 text-slate-600">Kesan premium memberi rasa percaya diri saat calon pelanggan mengunjungi situs Anda.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex h-12 w-12 flex-none items-center justify-center rounded-2xl bg-brand-50 text-xl text-brand-600">
+                  03
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-slate-900">Sesuai kebutuhan bisnis</h4>
+                  <p class="mt-1 text-slate-600">Konten dan struktur dapat disesuaikan dengan produk, jasa, atau campaign tertentu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-600">Paket</p>
+          <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+            Pilihan layanan yang sesuai kebutuhan bisnis Anda
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">Starter</p>
+            <div class="mt-5 flex items-end gap-2">
+              <span class="text-4xl font-black text-slate-900">Rp599K</span>
+              <span class="pb-1 text-sm text-slate-500">/paket</span>
+            </div>
+            <p class="mt-4 text-slate-600">Cocok untuk usaha baru yang butuh landing page sederhana dan cepat.</p>
+
+            <ul class="mt-6 space-y-3 text-slate-600">
+              <li>✓ 1 halaman landing page</li>
+              <li>✓ Desain responsive</li>
+              <li>✓ CTA & form kontak</li>
+              <li>✓ Revisi 2x</li>
+            </ul>
+
+            <a href="#form" class="mt-8 inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 transition hover:border-brand-600 hover:text-brand-600">
+              Pilih Starter
+            </a>
+          </div>
+
+          <div class="relative rounded-3xl border-2 border-brand-600 bg-brand-600 p-7 text-white shadow-xl shadow-brand-600/20">
+            <div class="absolute right-5 top-5 rounded-full bg-white px-2 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-brand-600">
+              Populer
+            </div>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-100">Professional</p>
+            <div class="mt-5 flex items-end gap-2">
+              <span class="text-4xl font-black">Rp1.2Jt</span>
+              <span class="pb-1 text-sm text-brand-100">/paket</span>
+            </div>
+            <p class="mt-4 text-brand-50">Ideal untuk bisnis yang ingin tampil lebih profesional dan siap menaikkan conversion.</p>
+
+            <ul class="mt-6 space-y-3 text-brand-50">
+              <li>✓ 1 halaman premium</li>
+              <li>✓ Copywriting + CTA</li>
+              <li>✓ Form pembelian</li>
+              <li>✓ Revisi 5x</li>
+            </ul>
+
+            <a href="#form" class="mt-8 inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 font-semibold text-brand-600 transition hover:bg-slate-100">
+              Pilih Professional
+            </a>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">Business</p>
+            <div class="mt-5 flex items-end gap-2">
+              <span class="text-4xl font-black text-slate-900">Rp2.4Jt</span>
+              <span class="pb-1 text-sm text-slate-500">/paket</span>
+            </div>
+            <p class="mt-4 text-slate-600">Untuk brand yang butuh tampilan lebih kompleks dengan strategi promosi lebih kuat.</p>
+
+            <ul class="mt-6 space-y-3 text-slate-600">
+              <li>✓ 3 section utama</li>
+              <li>✓ UI/UX premium</li>
+              <li>✓ Integrasi lead capture</li>
+              <li>✓ Support 1 bulan</li>
+            </ul>
+
+            <a href="#form" class="mt-8 inline-flex w-full items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 font-semibold text-slate-700 transition hover:border-brand-600 hover:text-brand-600">
+              Pilih Business
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" class="bg-slate-900">
+        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-300">Testimoni</p>
+            <h2 class="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
+              Apa kata client yang sudah menggunakan layanan kami?
+            </h2>
+          </div>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <div class="rounded-3xl bg-white/5 p-7 text-white ring-1 ring-white/10">
+              <div class="mb-4 flex text-yellow-400">★★★★★</div>
+              <p class="text-slate-200">
+                “Landing page kami jadi jauh lebih profesional dan lead yang masuk meningkat sejak halaman baru dibuat.”
+              </p>
+              <div class="mt-6 border-t border-white/10 pt-4">
+                <div class="font-bold">Rina D.</div>
+                <div class="text-sm text-slate-300">Pemilik Brand Skincare</div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl bg-white/5 p-7 text-white ring-1 ring-white/10">
+              <div class="mb-4 flex text-yellow-400">★★★★★</div>
+              <p class="text-slate-200">
+                “Desain sangat rapi, CTA jelas, dan form pembelian membantu kami menerima order lebih cepat.”
+              </p>
+              <div class="mt-6 border-t border-white/10 pt-4">
+                <div class="font-bold">Andre S.</div>
+                <div class="text-sm text-slate-300">Founder Startup Digital</div>
+              </div>
+            </div>
+
+            <div class="rounded-3xl bg-white/5 p-7 text-white ring-1 ring-white/10">
+              <div class="mb-4 flex text-yellow-400">★★★★★</div>
+              <p class="text-slate-200">
+                “Proses pengerjaan cepat, siap deploy, dan hasil sesuai brief. Sangat membantu untuk campaign kami.”
+              </p>
+              <div class="mt-6 border-t border-white/10 pt-4">
+                <div class="font-bold">Maya P.</div>
+                <div class="text-sm text-slate-300">Marketing Manager</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="form" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div class="grid gap-8 rounded-[32px] bg-gradient-to-br from-brand-50 via-white to-cyan-50 p-6 shadow-soft ring-1 ring-slate-200 sm:p-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div class="flex flex-col justify-center">
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-brand-600">Hubungi kami</p>
+            <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
+              Siap mulai proyek landing page Anda?
+            </h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">
+              Kirimkan kebutuhan Anda. Tim kami akan segera menghubungi untuk membahas desain, fitur, dan jadwal pengerjaan.
+            </p>
+
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-slate-200">📧</div>
+                <div>
+                  <div class="text-sm text-slate-500">Email</div>
+                  <div class="font-semibold text-slate-800">hello@task3studio.com</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-slate-200">📞</div>
+                <div>
+                  <div class="text-sm text-slate-500">WhatsApp</div>
+                  <div class="font-semibold text-slate-800">+62 812-3456-7890</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form id="leadForm" class="rounded-[28px] bg-white p-5 shadow-xl ring-1 ring-slate-200 sm:p-8">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div>
+                <label for="name" class="mb-2 block text-sm font-medium text-slate-700">Nama</label>
+                <input id="name" type="text" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:bg-white" placeholder="Nama Anda" required />
+              </div>
+
+              <div>
+                <label for="email" class="mb-2 block text-sm font-medium text-slate-700">Email</label>
+                <input id="email" type="email" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:bg-white" placeholder="email@email.com" required />
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="package" class="mb-2 block text-sm font-medium text-slate-700">Paket yang dipilih</label>
+                <select id="package" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:bg-white" required>
+                  <option value="">Pilih paket</option>
+                  <option>Starter</option>
+                  <option>Professional</option>
+                  <option>Business</option>
+                </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="message" class="mb-2 block text-sm font-medium text-slate-700">Pesan / kebutuhan</label>
+                <textarea id="message" rows="5" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-brand-500 focus:bg-white" placeholder="Ceritakan kebutuhan landing page Anda..." required></textarea>
+              </div>
+            </div>
+
+            <button id="submitBtn" type="submit" class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-600/30 transition hover:bg-brand-700">
+              Kirim Pesanan
+            </button>
+
+            <p id="formMessage" class="mt-4 hidden rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-700">
+              Pesan berhasil dikirim. Tim kami akan segera menghubungi Anda.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-8 text-sm text-slate-600 sm:px-6 lg:flex-row lg:px-8">
+        <div class="font-semibold text-slate-700">© 2026 Task3 Studio</div>
+        <div class="flex items-center gap-6">
+          <a href="#feature" class="transition hover:text-brand-600">Fitur</a>
+          <a href="#pricing" class="transition hover:text-brand-600">Harga</a>
+          <a href="#form" class="transition hover:text-brand-600">Kontak</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.getElementById("leadForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const formMessage = document.getElementById("formMessage");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Mengirim...";
+        formMessage.classList.add("hidden");
+
+        setTimeout(() => {
+          formMessage.classList.remove("hidden");
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Kirim Pesanan";
+        }, 900);
+      });
+    </script>
+  </body>
+</html>
